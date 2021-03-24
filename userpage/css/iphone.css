@@ -1,0 +1,33 @@
+body {
+   background-color: #00ff00;
+}
+
+
+.serverentry {
+   -webkit-border-top-left-radius: 8px;
+   -webkit-border-top-right-radius: 8px;
+   -webkit-border-bottom-left-radius: 8px;
+   -webkit-border-bottom-right-radius: 8px;
+}
+
+.name {
+   font-size: 2em;
+}
+
+.summary{
+   font-size: 1.5em;
+}
+
+.serverentry a {
+   font-size: 1.5em;
+
+
+.box {   
+	-webkit-border-radius: 5px;   
+	-moz-border-radius: 5px; 
+	background: #ddd;   
+	border: 1px solid #aaa;}
+
+
+
+ 

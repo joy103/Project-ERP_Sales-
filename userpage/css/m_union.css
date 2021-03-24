@@ -1,0 +1,42 @@
+#top {
+	WIDTH: 100%; BACKGROUND: url(../union/images/sub_bg.gif) repeat-x left top; HEIGHT: 41px
+}
+.mtop {
+	WIDTH: 100%
+}
+.mtop LI.back {
+	Z-INDEX: 10; POSITION: absolute; TOP: 6px; LEFT: 5px
+}
+.mtop LI.title {
+	POSITION: absolute; TEXT-ALIGN: center; MARGIN: 0px auto; WIDTH: 100%; LETTER-SPACING: -1px; COLOR: #fff; FONT-SIZE: 15pt; OVERFLOW: hidden; TOP: 8px; FONT-WEIGHT: bold
+}
+.mtop LI.home {
+	POSITION: absolute; TOP: 6px; RIGHT: 5px
+}
+#footer {
+	WIDTH: 100%; CLEAR: both
+}
+.bt_footer {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+.bt_footer LI {
+	DISPLAY: inline
+}
+.bt_footer LI A {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 32px; MARGIN: 1px; WIDTH: 72px; DISPLAY: inline-block; BACKGROUND: url(../../images/btn_footer.gif) no-repeat; HEIGHT: 32px; COLOR: #454545; FONT-SIZE: 13px; BORDER-TOP: 0px; FONT-WEIGHT: bold; BORDER-RIGHT: 0px; TEXT-DECORATION: none
+}
+.ft_info {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #ebebeb; WIDTH: 100%; HEIGHT: 28px
+}
+.ft_info LI {
+	DISPLAY: inline; COLOR: #bbb; FONT-SIZE: 12px
+}
+.ft_info LI A {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 28px; MARGIN: 0px 1px; DISPLAY: inline-block; HEIGHT: 28px; COLOR: #454545; FONT-SIZE: 12px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; TEXT-DECORATION: none
+}
+.copyr {
+	TEXT-ALIGN: center; WIDTH: 100%; HEIGHT: 25px; CLEAR: both; PADDING-TOP: 7px
+}
+.copyr A {
+	LETTER-SPACING: 0px; COLOR: #888; FONT-SIZE: 12px; TEXT-DECORATION: none
+}

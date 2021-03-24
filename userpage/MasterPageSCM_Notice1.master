@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageSCM_Notice.master.cs" Inherits="SCM_Notice_MasterPageNotice" %>
+
+
+<!DOCTYPE html>
+<html lang='ko'>
+<meta charset="euc-kr">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			<meta http-equiv="Cache-Control" content="no-cache" />
+            
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+ 
+ 
+<link rel="stylesheet" type="text/css" media="all" href="iscroll4/iscroll4_a.css" /> 	
+<link rel="stylesheet" type="text/css" href="iscroll4/styles.css"> 
+ 
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41997750-8', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<title>프로젝트정보</title>
+
+
+<script type="text/javascript" language = "javascript"> 
+window.addEventListener('load', function() {
+    setTimeout(scrollTo, 0, 0, 1);
+}, false);
+</script>
+
+<script type="text/javascript" src="iscroll4/src/iscroll.js"></script>
+<script type="text/javascript">
+var myScroll,
+	hoverClassRegEx = new RegExp('(^|\\s)iScrollHover(\\s|$)'),
+	removeClass = function () {
+		if (this.hoverTarget) {
+			clearTimeout(this.hoverTimeout);
+			this.hoverTarget.className = this.hoverTarget.className.replace(hoverClassRegEx, '');
+			this.target = null;
+		}
+	};
+
+function loaded() {
+	myScroll = new iScroll('wrapper', {
+		onBeforeScrollStart: function (e) {
+			var target = e.target;
+
+			clearTimeout(this.hoverTimeout);
+
+			while (target.nodeType != 1) target = target.parentNode;
+
+			this.hoverTimeout = setTimeout(function () {
+				if (!hoverClassRegEx.test(target.className)) target.className = target.className ? target.className + ' iScrollHover' : 'iScrollHover';
+			}, 80);
+
+			this.hoverTarget = target;
+			
+			e.preventDefault();
+		},
+		onScrollMove: removeClass,
+		onBeforeScrollEnd: removeClass
+	});
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+
+
+</head>
+<body>
+<form id="Form1" method="post" runat="server"> 
+
+<div id="header"> 
+<!img src="../../images/scm_notice_main_top.jpg"  width=100%  border="0" id='titleimage'/>
+</div>
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+
+
+
+
+<p><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></p>
+ <p style="margin-top:500px;">
+ 
+ 
+ 
+ 
+<!--
+<asp:HyperLink ID="lnkLogin" runat="server" CssClass="no0" NavigateUrl="~/MainLogin.aspx"></asp:HyperLink>
+<asp:HyperLink ID="lnkLogout" runat="server" CssClass="no0" NavigateUrl="~/MyPage/DoLogout.aspx"></asp:HyperLink>
+<asp:HyperLink ID="lnkHome" runat="server" CssClass="no0" NavigateUrl="~/Default.aspx"></asp:HyperLink>
+<asp:HyperLink ID="HyperLink3" runat="server" CssClass="no0"></asp:HyperLink>
+<asp:HyperLink ID="HyperLink2" runat="server" CssClass="no0"></asp:HyperLink>
+-->    
+</ul> 
+</div><!-- /scrolle -->
+<div id="footer"> 
+</div>
+</div><!-- /wrappert -->
+</form>
+</body>
+</html>          
+                               
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+ 
